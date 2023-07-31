@@ -104,9 +104,7 @@ def Diary():
         )
 
     # Initialize our dataframe with values from existing csv file.
-    current_df, set_current_df = hooks.use_state(df)
-    old_records = current_df.values.tolist()
-    records, set_records = hooks.use_state(old_records)
+    records, set_records = hooks.use_state(df.values.tolist())
 
     def update_textvalue(event):
         set_description(event['target']['value'])
@@ -115,8 +113,6 @@ def Diary():
     def submit(event):
         """Updates records and dataframe."""
         set_records(records + [[get_date(), description]])
-        current_df = pd.DataFrame(records, columns=COLUMN_HEADER)
-        set_current_df(current_df)
 
     return html.div(
         BOOTSTRAP_CSS,
