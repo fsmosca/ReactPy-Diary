@@ -27,7 +27,7 @@ pip install -r requirements.txt
 uvicorn diary:app
 ```
 
-This code is linked from my <a href="https://energybeam.blogspot.com/2023/07/create-simple-diary-application-in.html" target="_blank">article</a> in blogspot.
+This code is linked from my [article](https://energybeam.blogspot.com/2023/07/create-simple-diary-application-in.html) in blogspot.
 
 ## B. Credits
 
