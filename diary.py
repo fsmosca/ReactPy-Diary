@@ -114,8 +114,7 @@ def Diary():
     @event(prevent_default=True)
     def submit(event):
         """Updates records and dataframe."""
-        current_date_time = get_date()
-        set_records(records + [[current_date_time, description]])
+        set_records(records + [[get_date(), description]])
         current_df = pd.DataFrame(records, columns=COLUMN_HEADER)
         set_current_df(current_df)
 
