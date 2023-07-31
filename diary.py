@@ -111,7 +111,7 @@ def Diary():
 
     @event(prevent_default=True)
     def submit(event):
-        """Updates records and dataframe."""
+        """Updates records."""
         set_records(records + [[get_date(), description]])
 
     return html.div(
