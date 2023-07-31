@@ -32,5 +32,6 @@ This code is linked from my [article](https://energybeam.blogspot.com/2023/07/cr
 ## B. Credits
 
 * [ReactPy](https://reactpy.dev/docs/guides/getting-started/index.html)
+* [ReactPy Discussions](https://github.com/reactive-python/reactpy/discussions)
 * [Bootstrap 5](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 * [ReactPy-Flake8](https://github.com/reactive-python/reactpy-flake8)
