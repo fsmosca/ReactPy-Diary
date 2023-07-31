@@ -103,7 +103,7 @@ def Diary():
             f'There is error {df} in opening the {csvfn} file.'
         )
 
-    # Initialize our dataframe with values from existing csv file.
+    # Initialize our records from existing csv file.
     records, set_records = hooks.use_state(df.values.tolist())
 
     def update_textvalue(event):
