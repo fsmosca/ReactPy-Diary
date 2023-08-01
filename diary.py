@@ -12,7 +12,7 @@ pip install reactpy-flake8
 from typing import Union
 from datetime import datetime
 from reactpy import component, html, event, hooks
-from reactpy.backend.fastapi import configure
+from reactpy.backend.fastapi import configure, Options
 from fastapi import FastAPI
 import pandas as pd
 
@@ -28,7 +28,7 @@ BOOTSTRAP_CSS = html.link(
     }
 )
 
-
+PAGE_TITLE = 'ReactPy-Diary'
 CSV_FILENAME = 'diary.csv'
 COLUMN_HEADER = ['Date', 'Description']
 
@@ -161,4 +161,4 @@ def Diary():
 
 
 app = FastAPI()
-configure(app, Diary)
+configure(app, Diary, options=Options(head=html.head(html.title(PAGE_TITLE))))
