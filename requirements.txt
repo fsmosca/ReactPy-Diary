@@ -1,3 +1,4 @@
 reactpy[fastapi]
 pandas
 uvicorn[standard]
+reactpy-flake8
