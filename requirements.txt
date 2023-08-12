@@ -1,3 +1,3 @@
-reactpy
+reactpy[fastapi]
 pandas
-reactpy-flake8
+uvicorn[standard]
